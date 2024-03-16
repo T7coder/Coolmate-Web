@@ -39,33 +39,26 @@ function Login() {
         //get data from mockapi
         axios({ method: 'GET', url: 'https://65f51306f54db27bc0229836.mockapi.io/user' })
             .then((response) => {
-                const dataResponse = response.data
-                let flag = false
-                dataResponse.map((value, index) => {
-                    if (value.Email == data.EmailUser && value.Password == data.PasswordUser && flag==false)
-                    {
-                        flag=true
-                        Swal.fire({
-                            title: "Thành công",
-                            text: "Bạn đã đăng ký tài khoản thành công",
-                            icon: "success"
-                        });
-                        setTimeout(() => {
-                            UrlPageNavigate('/')
-                        }, 2000)
-                    }    
-                })
-                if(flag==false)
-                {
+                const flag = response.data.find((item) => (item.Email == data.EmailUser && item.Password == data.PasswordUser))
+
+                if (flag != undefined) {
+                    Swal.fire({
+                        title: "Thành công",
+                        text: "Bạn đã đăng ký tài khoản thành công",
+                        icon: "success"
+                    });
+                    setTimeout(() => {
+                        UrlPageNavigate('/')
+                    }, 2000)
+                }
+                else
                     Swal.fire({
                         title: "Thất bại",
                         text: "Tài khoản hoặc mật khẩu không chính xác",
                         icon: "error"
                     });
-                }
             })
-            .catch((error)=>
-            {
+            .catch((error) => {
                 console.log(error.message)
             })
     }
