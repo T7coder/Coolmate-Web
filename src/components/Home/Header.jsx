@@ -10,6 +10,7 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
 import { Link } from 'react-router-dom';
 
+import cool_mateLogo from '../../assets/images/Logo/cool_mateLogo.jpg'
 function Header() {
 
   return (
@@ -20,7 +21,7 @@ function Header() {
         <IoSearch />
       </div>
 
-      <img className='Header_Logo' src="cool_mateLogo.jpg" alt="error" />
+      <img className='Header_Logo' src={cool_mateLogo} alt="error" />
 
       <li className="Header_Nav">
         <ul>

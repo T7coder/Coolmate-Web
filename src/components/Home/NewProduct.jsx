@@ -3,17 +3,20 @@ import React, { useState } from 'react'
 import '../../styles/Home/NewProduct.css'
 import { GrLinkNext } from "react-icons/gr";
 import { set } from 'react-hook-form';
+
+import product1 from '../../assets/images/NewProduct/product1.jpg'
+
 function NewProduct() {
-    const listNewProduct = [{ img: "NewProduct/product1.jpg", title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
-    { img: "NewProduct/product1.jpg", title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
-    { img: "NewProduct/product1.jpg", title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
-    { img: "NewProduct/product1.jpg", title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
-    { img: "NewProduct/product1.jpg", title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
-    { img: "NewProduct/product2.jpg", title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
-    { img: "NewProduct/product2.jpg", title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
-    { img: "NewProduct/product2.jpg", title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
-    { img: "NewProduct/product2.jpg", title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
-    { img: "NewProduct/product2.jpg", title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" }]
+    const listNewProduct = [{ img: product1, title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
+    { img: product1, title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
+    { img: product1, title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
+    { img: product1, title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
+    { img: product1, title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
+    { img: product1, title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
+    { img: product1, title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
+    { img: product1, title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
+    { img: product1, title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" },
+    { img: product1, title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", price_Origin: "299.000đ", discount: "10%" }]
 
     const [indexProduct, setIndexProduct] = useState(0)
     const NextProduct = () => {

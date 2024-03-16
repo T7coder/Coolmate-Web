@@ -2,22 +2,27 @@ import React, { useEffect, useState } from 'react'
 import '../../styles/Home/Flashsale.css'
 
 import { GrLinkNext } from "react-icons/gr";
+
+import bannerFlashsale from '../../assets/images/Banner/bannerFlashsale.jpg'
+import product1 from '../../assets/images/product/product1.jpg'
+import product2 from '../../assets/images/product/product2.jpg'
+
 function Flashsale() {
-  const listProduct = [{ image: "/product/product1.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
-    , { image: "/product/product2.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
-    , { image: "/product/product1.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
-    , { image: "/product/product2.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
-    , { image: "/product/product2.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" },
-  { image: "/product/product1.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" },
-  { image: "/product/product2.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" },
-  { image: "/product/product1.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }]
+  const listProduct = [{ image: product2, title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
+    , { image: product1, title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
+    , { image: product2, title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
+    , { image: product1, title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
+    , { image: product2, title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" },
+  { image: product2, title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" },
+  { image: product2, title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" },
+  { image: product2, title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }]
   
   const [countProductList,setCountProductList]=useState(0)
   return (
     <div className='Flashsale_container'>
       <div className='Flashsale_banner'>
 
-        <img src="bannerFlashsale.jpg" alt="" />
+        <img src={bannerFlashsale} alt="" />
 
         <div>
           <div>

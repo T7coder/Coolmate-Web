@@ -2,15 +2,22 @@ import React, { useEffect } from 'react'
 import { GrLinkNext } from "react-icons/gr";
 import { FaStar } from "react-icons/fa";
 import '../../styles/Home/GiveProduct.css'
+
+import product1 from '../../assets/images/NewProduct/product1.jpg'
+import GiveProduct1 from '../../assets/images/GiveProduct/product1.jpg'
+import GiveProduct2 from '../../assets/images/GiveProduct/product2.png'
+import GiveProduct3 from '../../assets/images/GiveProduct/product3.png'
+import GiveProduct4 from '../../assets/images/GiveProduct/product4.png'
+
 function GiveProduct() {
 
     const listSubProd = [
-    { info: "Đáng mua", img: "NewProduct/product1.jpg", evaluate: "4,5", pushchase: "(321)", color: ["red", "gray"], title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", priceOrigin: "299.000đ", discount: "10%" },
-    { info: "Đáng mua", img: "NewProduct/product1.jpg", evaluate: "4,5", pushchase: "(321)", color: ["red", "gray"], title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", priceOrigin: "299.000đ", discount: "10%" }, 
-    { info: "Đáng mua", img: "NewProduct/product1.jpg", evaluate: "4,5", pushchase: "(321)", color: ["red", "gray"], title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", priceOrigin: "299.000đ", discount: "10%" }]
-    const listProduct = [{ img: "GiveProduct/product1.jpg", subList: listSubProd }, 
-                         { img: "GiveProduct/product2.png", subList: listSubProd }, 
-                         { img: "GiveProduct/product3.png", subList: listSubProd }]
+    { info: "Đáng mua", img: product1, evaluate: "4,5", pushchase: "(321)", color: ["red", "gray"], title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", priceOrigin: "299.000đ", discount: "10%" },
+    { info: "Đáng mua", img: product1, evaluate: "4,5", pushchase: "(321)", color: ["red", "gray"], title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", priceOrigin: "299.000đ", discount: "10%" }, 
+    { info: "Đáng mua", img: product1, evaluate: "4,5", pushchase: "(321)", color: ["red", "gray"], title: "Mũ Lưỡi Trai Sport Snapback", material: "Vải Cotton / Xanh navy", price: "199.000đ", priceOrigin: "299.000đ", discount: "10%" }]
+    const listProduct = [{ img: GiveProduct1, subList: listSubProd }, 
+                         { img: GiveProduct2, subList: listSubProd }, 
+                         { img: GiveProduct3, subList: listSubProd }]
     return (
         <div className='GiveProduct_container'>
             <li>

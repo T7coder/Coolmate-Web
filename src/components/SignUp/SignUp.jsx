@@ -12,6 +12,9 @@ import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2'
 import axios from 'axios';
 
+import googleIcon from '../../assets/images/Logo/googleIcon.svg'
+import advertise from '../../assets/images/Banner/advertise.jpg'
+
 function SignUp() {
     const [dataApi,setDataApi]=useState([])
     useEffect(() => {
@@ -86,7 +89,7 @@ function SignUp() {
 
                         <li>
                             <ul>
-                                <img src="googleIcon.svg" alt="ErrorGoogle" />
+                                <img src={googleIcon} alt="ErrorGoogle" />
                             </ul>
                             <ul>
                                 <FaFacebookF />
@@ -127,7 +130,7 @@ function SignUp() {
                     </div>
 
                     <div className='SignUp_Advertise'>
-                        <img src="advertise.jpg" alt="" />
+                        <img src={advertise} alt="" />
                     </div>
 
                     <Link to={'/'}><IoMdClose /></Link>
